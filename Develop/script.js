@@ -1,3 +1,12 @@
+// Create live display date and time under header.
+let currentTime = moment().format("dddd, MMMM Do YYYY, h:mm a");
+console.log(currentTime);
+
+function displayDate () {
+    document.getElementById("currentDay").innerHTML = currentTime;
+};
+displayDate();
+
 // Create variables.
 
 var nineAmTime = document.querySelector("#nine-am");
@@ -12,8 +21,11 @@ var fivePmTime = document.querySelector("#five-pm")
 
 var saveBtn = document.querySelector("#save");
 
-// Save characters typed in text area in local storage.
+// Save characters typed in text area in local storage. Event listener to save button.
+
+
+
+
 // Assign color code for each time slot when the hour has passed.
 // Assign color code in text area for the current time in time slot.
 // Assign color code for each time slot when time hasn't passed (future).
-// Create live display date and time under header.

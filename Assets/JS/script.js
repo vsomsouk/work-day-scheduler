@@ -25,15 +25,19 @@ var saveBtn = document.querySelector("#save");
 // Event listener to save button and adding data in local storage.
 
 $("#save").on("click", function() {
-    console.log("textarea");
+   console.log("textarea");
     var textInfo = $(this).attr("text-entry")
     var hourTime = $(textInfo).val();
    
-    localStorage.setItem(textInfo,hourTime);
+   localStorage.setItem(textInfo,hourTime);
+   console.log(localStorage.getItem(textInfo));
 });
+//localStorage.setItem(textInfo,JSON.stringify(hourTime))
 
 
-// Storing data typed in text area in local storage. 
+
+
+
 
 
 // Assign color code for each time slot when the hour has passed.

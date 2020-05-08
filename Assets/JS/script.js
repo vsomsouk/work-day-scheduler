@@ -37,5 +37,7 @@ $("#save").on("click", function() {
 
 
 // Assign color code for each time slot when the hour has passed.
+
+
 // Assign color code in text area for the current time in time slot.
 // Assign color code for each time slot when time hasn't passed (future).

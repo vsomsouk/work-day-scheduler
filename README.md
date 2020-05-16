@@ -7,4 +7,4 @@ This week's assignment is the work day scheduler. This application includes JQue
 https://vsomsouk.github.io/work-day-scheduler/
 <br>
 <br>
-<img src="./Develop/screenshot.JPG">
+<img src="./Image/updatedworkschimg.JPG">

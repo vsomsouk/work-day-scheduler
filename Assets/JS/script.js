@@ -31,7 +31,9 @@ var rows = ["row1", "row2", "row3", "row4", "row5", "row6", "row7", "row8", "row
 // have a loop over array of buttons
 saveBtns.forEach(function (saveBtn) {
   // for each button, add an event listener
-  saveBtn.addEventListener('click', function() {
+  //saveBtn.addEventListener('click', function() {
+  //jquery version
+  $("saveBtn").click(function() {
     // used 'foreach' towards all rows, will save in local storage
     rows.forEach(function (row) {
       localStorage.setItem(row, window[row].value)
@@ -53,16 +55,19 @@ rows.forEach(function (row) {
 
   // add past class (if current hour is greater than row hour, row will add past css style)
   if(currentHour > rowHour) {
-      element.classList.add("past")
+      $(element).addClass("past")
+      //element.classList.add("past")
   }
 
   // add present class (if current hour is equal to row hour, row will add present css style)
   if (currentHour == rowHour) {
-      element.classList.add("present")
+      $(element).addClass("present")
+      //element.classList.add("present")
   }
   
   // add future class (if currenthour is less than rowhour, row will add future css style)
   if (currentHour < rowHour) {
+      $(element).addClass("future")
       element.classList.add("future")
   }
 
